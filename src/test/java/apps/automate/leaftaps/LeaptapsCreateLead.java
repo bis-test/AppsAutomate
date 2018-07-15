@@ -1,6 +1,6 @@
 //@author-Biswajit Sundara
 //@date-05/05/2018
-//@topic- Selenium log in program
+//@topic- CreateLead in Leaftaps application
 
 
 package apps.automate.leaftaps;
@@ -61,7 +61,7 @@ public class LeaptapsCreateLead {
 		Select dd1 = new Select(ind1);
 		dd1.selectByIndex(3);
 
-		
+
 		//select the industry from drop downs
 		WebElement ind= driver.findElementById("createLeadForm_industryEnumId");
 		Select dd2 = new Select(ind);
@@ -76,15 +76,15 @@ public class LeaptapsCreateLead {
 		//Select the calendar
 		WebElement birthdate = driver.findElementById("createLeadForm_birthDate-button");
 		birthdate.click();
-        Thread.sleep(3000);
+		Thread.sleep(3000);
 
-		
+
 		//Navigate to the year. From 2018 go back to 32 years to open 1986
 		WebElement yearNav = driver.findElementByXPath("(//div[@unselectable='on'])[3]");
 		for (int i=0;i<=31;i++)
 			yearNav.click();
 
-        //Navigate to Aug month. The current month is July so click once
+		//Navigate to Aug month. The current month is July so click once
 		WebElement monthNav = driver.findElementByXPath("(//div[@unselectable='on'])[6]");
 		monthNav.click();
 
