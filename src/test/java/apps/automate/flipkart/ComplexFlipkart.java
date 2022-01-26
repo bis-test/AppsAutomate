@@ -1,6 +1,4 @@
 //@author-Biswajit
-//@date-05/20/2018
-//@organization- Test Leaf
 
 package apps.automate.flipkart;
 
